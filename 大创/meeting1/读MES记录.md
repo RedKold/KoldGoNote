@@ -190,3 +190,5 @@ A(optimal taxation policy) <--() B(each bank's expected capital shorfall)
 ```
 
 
+- LVG:  Leverage
+	- measureed as quasi-market value of assets divided by market value of equity.(资产的准市场价值除以股权的市场价值来衡量。)
