@@ -343,7 +343,14 @@ char echo_str[1024];
 
 # 抓包
 可以利用 `wireshark` 抓包分析
-抓包指令：`h1 tcpdump -i h1-eth0 -s0 -U -w dump_py_server2c_client.pcap &`
+抓包指令：
+```bash
+h1 tcpdump -i h1-eth0 -s0 -U -w ./packetcaught/dump_c2c01.pcap &
+```
+
+```bash
+h1 tcpdump -i h1-eth0 -s0 -U -w ./packetcaught/dump_py2c01_loss.pcap &
+```
 
 
 ## py server 2 c socket
