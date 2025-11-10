@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "636fe30d4bd03a85",
+    "type": "split",
+    "children": [
+      {
+        "id": "98cba683f2d326d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fc9254f72327f7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/PA dairy/ICS-PA0-report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS-PA0-report"
+            }
+          },
+          {
+            "id": "095ab9f16102f913",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融大数据处理技术.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "金融大数据处理技术"
+            }
+          },
+          {
+            "id": "9a1b258d27481666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/redkoldnote/docs/数理基础/概率论/随机变量的数据特征.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "随机变量的数据特征"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b15341615ffe13d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "be78c5257c9a122f",
+        "type": "tabs",
+        "dimension": 60.49079754601226,
+        "children": [
+          {
+            "id": "0e2bb6f505a528e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8f5918b3b24dcad8",
+        "type": "tabs",
+        "dimension": 39.50920245398773,
+        "children": [
+          {
+            "id": "7597041e513f2f09",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "相关系数",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ee46886fd9f1765f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2b5f3bd6cbe6e0d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cb493fe93efe697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fbe17b85f2b6b8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/S04/计算机网络/计算机网络.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 计算机网络"
+            }
+          },
+          {
+            "id": "4bbf069eeaea9228",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "302794ce6fe888e4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f62b66d8ccb44cdc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "3a5d4b001a393e25",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "0fc9254f72327f7e",
+  "lastOpenFiles": [
+    "KoldGoNote/lessons/S05/PA dairy/ICS PA.md",
+    "KoldGoNote/lessons/S05/PA dairy/ICS-PA0-report.md",
+    "KoldGoNote/lessons/S05/PA dairy/ICS-PA1 note.md",
+    "KoldGoNote/lessons/S05/assignments/FBDP-1.md",
+    "KoldGoNote/lessons/S05/金融大数据处理技术.md",
+    "vault/redkoldnote/docs/数理基础/概率论/随机变量的数据特征.md",
+    "KoldGoNote/lessons/S05/assignments",
+    "KoldGoNote/lessons/S05/未命名 1.md",
+    "KoldGoNote/lessons/S05/未命名.md",
+    "KoldGoNote/大创/知识累积.md",
+    "vault/redkoldnote/docs/数理基础/概率论/大数定律和极限定理.md",
+    "vault/redkoldnote/docs/Why do you write/少女歌剧镜头记录.md",
+    "KoldGoNote/lessons/S05/ICS PA.md",
+    "KoldGoNote/lessons/S05/数字逻辑与计算机组成.md",
+    "vault/redkoldnote/docs/Why do you write/ppp823.md",
+    "KoldGoNote/lessons/S05/机器学习导论.md",
+    "KoldGoNote/lessons/S05/金融计量学.md",
+    "vault/redkoldnote/docs/Why do you write/现地记录-8-23-ppp.md",
+    "KoldGoNote/lessons/S05/Java入门.md",
+    "KoldGoNote/算法.md",
+    "KoldGoNote/lessons/S05",
+    "KoldGoNote/lessons/S04/实习团队总结.md",
+    "KoldGoNote/deepseek-qwen_test.md",
+    "KoldGoNote/lessons",
+    "KoldGoNote/lessons/S04/实习个人总结.md",
+    "KoldGoNote/Web开发/大模型应用.md",
+    "vault/redkoldnote/docs/Why do you write/少女歌剧mad设计.md",
+    "vault/redkoldnote/docs/本科课程/金融经济学/金融经济学.md",
+    "KoldGoNote/大创/大创-25-7-31-进度.md",
+    "KoldGoNote/attachment/attachments/001F2DDF.png",
+    "KoldGoNote/attachment/attachments/wireshark-wnd-error.png",
+    "KoldGoNote/attachment/attachments/diff-ans.png",
+    "KoldGoNote/attachment/attachments/datagram-vs-virtual-circuit.png",
+    "KoldGoNote/attachment/attachments/broadcast storm.png",
+    "KoldGoNote/attachment/attachments/016A6B0D.png",
+    "KoldGoNote/attachment/attachments/7a80e3e32f44e2fb479818b6545b6df1.png",
+    "KoldGoNote/attachment/attachments/5-elements-6-comparisons-median.png",
+    "vault/redkoldnote/backup.tar.gz",
+    "vault/redkoldnote/docs/计算机网络/homework",
+    "vault/redkoldnote/docs/计算机网络",
+    "vault/docs/本科课程/计算机网络/homework",
+    "vault/docs/本科课程/计算机网络",
+    "vault/docs/本科课程",
+    "vault/docs",
+    "vault/redkoldnote/2021-11-22-22-49-26.png",
+    "vault/redkoldnote/2021-11-22-22-54-02.png"
+  ]
+}

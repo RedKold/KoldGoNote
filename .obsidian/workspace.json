@@ -1,0 +1,297 @@
+{
+  "main": {
+    "id": "636fe30d4bd03a85",
+    "type": "split",
+    "children": [
+      {
+        "id": "515730aa63937471",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5e21cd0ae1f9d97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/Web开发/HBase Shell.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HBase Shell"
+            }
+          },
+          {
+            "id": "9eb09febb61bf0c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS"
+            }
+          },
+          {
+            "id": "0fe1cfea44b10d8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "金融计量学 FE"
+            }
+          },
+          {
+            "id": "588ccd0b501170bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/CS-BAOYAN/好题记录-HaoTi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "好题记录-HaoTi"
+            }
+          },
+          {
+            "id": "28844f88c3321bc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/大创/Cross-Entrophy Method.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cross-Entrophy Method"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b15341615ffe13d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "be78c5257c9a122f",
+        "type": "tabs",
+        "dimension": 60.49079754601226,
+        "children": [
+          {
+            "id": "0e2bb6f505a528e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8f5918b3b24dcad8",
+        "type": "tabs",
+        "dimension": 39.50920245398773,
+        "children": [
+          {
+            "id": "7597041e513f2f09",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "KL",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ee46886fd9f1765f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2b5f3bd6cbe6e0d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cb493fe93efe697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fbe17b85f2b6b8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "金融计量学 FE 的反向链接列表"
+            }
+          },
+          {
+            "id": "4bbf069eeaea9228",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "金融计量学 FE 的出链列表"
+            }
+          },
+          {
+            "id": "302794ce6fe888e4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f62b66d8ccb44cdc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "金融计量学 FE 的大纲"
+            }
+          },
+          {
+            "id": "3a5d4b001a393e25",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "slides-extended:Show slide preview": false,
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "0fe1cfea44b10d8b",
+  "lastOpenFiles": [
+    "ICS-PA3 note.md",
+    "KoldGoNote/lessons/S05/assignments/ICS-5.md",
+    "KoldGoNote/lessons/S05/ICS.md",
+    "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+    "ICS-5.md",
+    "CS/CS-BAOYAN/好题记录-HaoTi.md",
+    "CS/小卡片/格雷码.md",
+    "CS/Web开发/HBase Shell.md",
+    "CS/Web开发/博客.md",
+    "KoldGoNote/大创/CE 实验.md",
+    "KoldGoNote/大创/Cross-Entrophy Method.md",
+    "KoldGoNote/大创/Cross-Entropy Method 2.md",
+    "KoldGoNote/大创/meeting1/读MES记录.md",
+    "DLCO-BooleanAlgebra.md",
+    "KoldGoNote/lessons/S05/ICS - Section 3 程序的转换和指令系统.md",
+    "KoldGoNote/lessons/S05/DLCO 数字逻辑与计算机组成.md",
+    "KoldGoNote/lessons/S05/assignments/DLCO-lab3-report.md",
+    "CS/小卡片",
+    "KoldGoNote/lessons/S05/数字逻辑与计算机组成(1).md",
+    "KoldGoNote/lessons/S05/assignments/ICS-3.md",
+    "KoldGoNote/lessons/S05/ICS - Section 4 程序的机器级表示.md",
+    "vault/redkoldnote/docs/本科课程/计算机网络/exams/2020-re-network-exam.md",
+    "KoldGoNote/lessons/S05/FBDP 金融大数据处理技术.md",
+    "ICS-PA2 report.md",
+    "Gauss-Markov假设.md",
+    "KoldGoNote/Daily/2025-10-30_周四.md",
+    "KoldGoNote/Daily/2025-11-05_周三.md",
+    "CS/Bash",
+    "大创",
+    "CS/Unity",
+    "mine-combat",
+    "CS/Java",
+    "CS",
+    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/isla.jpeg",
+    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/image.png",
+    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/image-1.png",
+    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets",
+    "CS/CS-BAOYAN/njucs-baoyan/test.txt",
+    "CS/CS-BAOYAN/njucs-baoyan/test.cpp",
+    "KoldGoNote/attachment/attachments/001F2DDF.png",
+    "KoldGoNote/attachment/attachments/wireshark-wnd-error.png",
+    "KoldGoNote/attachment/attachments/diff-ans.png",
+    "KoldGoNote/attachment/attachments/datagram-vs-virtual-circuit.png",
+    "KoldGoNote/attachment/attachments/broadcast storm.png",
+    "KoldGoNote/attachment/attachments/016A6B0D.png",
+    "KoldGoNote/attachment/attachments/7a80e3e32f44e2fb479818b6545b6df1.png"
+  ]
+}

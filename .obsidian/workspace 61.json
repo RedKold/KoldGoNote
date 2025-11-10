@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "2be13a76a1f98bf4",
+    "type": "split",
+    "children": [
+      {
+        "id": "e1d86a225ec1a44e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "433cc550e8f91097",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS-PA2 note"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "383182203947373e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4995040a5dc249b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7bb81703ca5c5450",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "e0378dfd059164ce",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "5637f90260669fe5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aed7dd5eeffdadb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "6151a8d941824537",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7064b25888a5829a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ICS-PA2 note 的反向链接列表"
+            }
+          },
+          {
+            "id": "b6864972ca7a5a0d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ICS-PA2 note 的出链列表"
+            }
+          },
+          {
+            "id": "30a5fab4c6871e8a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "af3599693ef42540",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ICS-PA2 note 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "af3599693ef42540",
+  "lastOpenFiles": []
+}

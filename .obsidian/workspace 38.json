@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "16f10362a1064f23",
+    "type": "split",
+    "children": [
+      {
+        "id": "69b24898051f015f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a780392ff1f81558",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "金融计量学 FE"
+            }
+          },
+          {
+            "id": "8b7ba93d2622221c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "20b4379dd4d9300b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1a7bdaec710742d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71bca4ab01eaed56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d21648694f91b56e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "f165c01b6ed5f135",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dc38bbbc911479c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3af6650411fd2b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9783b15e9bbb08dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/assignments/FE-1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "FE-1 的反向链接列表"
+            }
+          },
+          {
+            "id": "eb44a0da190c599e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/assignments/FE-1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "FE-1 的出链列表"
+            }
+          },
+          {
+            "id": "90b320a83ed9eed3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a51ae688843bf82f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "金融计量学 FE 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "a780392ff1f81558",
+  "lastOpenFiles": [
+    "KoldGoNote/lessons/S05/assignments/FE-1.md",
+    "KoldGoNote/lessons/S05/公司金融学 Company Finance.md",
+    "KoldGoNote/lessons/S05/ICS.md",
+    "未命名.md",
+    "KoldGoNote/lessons/S05/金融计量学.md",
+    "KoldGoNote/lessons/S05/数字逻辑与计算机组成.md",
+    "KoldGoNote/lessons/S05/金融大数据处理技术 FBDP.md",
+    "KoldGoNote/击碎梦想的时刻.md",
+    "KoldGoNote/算法.md",
+    "KoldGoNote/日区游玩.md",
+    "vault/redkoldnote/README.md"
+  ]
+}

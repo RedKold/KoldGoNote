@@ -1,0 +1,5 @@
+{
+  "template": "KoldGoNote/Templater/tp/tp-diary",
+  "folder": "KoldGoNote/Daily",
+  "format": "YYYY-MM-DD_ddd"
+}

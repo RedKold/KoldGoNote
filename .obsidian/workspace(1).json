@@ -1,0 +1,311 @@
+{
+  "main": {
+    "id": "636fe30d4bd03a85",
+    "type": "split",
+    "children": [
+      {
+        "id": "67798c7b7a7a652d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "364a9aaed899021a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/redkoldnote/docs/计算机网络/exams/2020-network-exam.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2020-network-exam"
+            }
+          },
+          {
+            "id": "dc79f97d53e8ee1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/redkoldnote/docs/算法设计与分析/Notes/NP问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NP问题"
+            }
+          },
+          {
+            "id": "37920a879bc32ffd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/redkoldnote/docs/算法设计与分析/作业/assignment7/231275036 朱晗 作业7.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "231275036 朱晗 作业7"
+            }
+          },
+          {
+            "id": "293182ed461e887d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名文件夹/redkoldnote/docs/算法设计与分析/Notes/时间复杂度问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "时间复杂度问题"
+            }
+          },
+          {
+            "id": "59b4e5b8a586162c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vault/redkoldnote/docs/算法设计与分析/Notes/NP问题.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NP问题"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b15341615ffe13d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "be78c5257c9a122f",
+        "type": "tabs",
+        "dimension": 49.668874172185426,
+        "children": [
+          {
+            "id": "0e2bb6f505a528e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8f5918b3b24dcad8",
+        "type": "tabs",
+        "dimension": 50.331125827814574,
+        "children": [
+          {
+            "id": "7597041e513f2f09",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "斯特林",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ee46886fd9f1765f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "2b5f3bd6cbe6e0d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cb493fe93efe697",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fbe17b85f2b6b8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/S04/计算机网络/计算机网络.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 计算机网络"
+            }
+          },
+          {
+            "id": "4bbf069eeaea9228",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "302794ce6fe888e4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f62b66d8ccb44cdc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "vault/redkoldnote/docs/算法设计与分析/作业/assignment7/231275036 朱晗 作业7.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "231275036 朱晗 作业7 的大纲"
+            }
+          },
+          {
+            "id": "3a5d4b001a393e25",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "d8cc4e5ca4c8e6ed",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 296.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "d8cc4e5ca4c8e6ed",
+  "lastOpenFiles": [
+    "vault/redkoldnote/docs/算法设计与分析/Notes/NP问题.md",
+    "vault/redkoldnote/docs/算法设计与分析/作业/assignment7/231275036 朱晗 作业7.md",
+    "未命名文件夹/redkoldnote/docs/算法设计与分析/Notes/时间复杂度问题.md",
+    "vault/redkoldnote/docs/计算机网络/exams/2020-network-exam.md",
+    "vault/redkoldnote/docs/计算机网络/Notes/网络层 Network Layer.md",
+    "vault/redkoldnote/docs/算法设计与分析/作业/assignment7",
+    "vault/redkoldnote/docs/计算机网络/Notes/链路层 Direct Link Networks.md",
+    "未命名文件夹/redkoldnote/docs/计算机网络/Notes/链路层 Direct Link Networks.md",
+    "vault/redkoldnote/docs/计算机网络/Notes/多媒体 MultiMedia networking.md",
+    "vault/redkoldnote/docs/计算机网络/Notes/运输层 Transport Layer.md",
+    "未命名文件夹/redkoldnote/docs/计算机网络/homework/HW5_231275036_朱晗.md",
+    "未命名文件夹/redkoldnote/docs/计算机网络/Notes/网络层 Network Layer.md",
+    "vault/redkoldnote/docs/计算机网络/Notes/绪论.md",
+    "vault/redkoldnote/docs/计算机网络/exams",
+    "vault/redkoldnote/docs/计算机网络/Notes/计算机网络.md",
+    "vault/redkoldnote/docs/index.md",
+    "vault/redkoldnote/README.md",
+    "vault/redkoldnote/docs/数理基础/概率论/多维随机变量总结.md",
+    "vault/redkoldnote/docs/数理基础/概率论/随机变量的数据特征.md",
+    "vault/redkoldnote/docs/数理基础/概率论/常用随机变量分布类型总结.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/常用随机变量分布类型总结.md",
+    "vault/redkoldnote/docs/计算机网络/homework/HW3_231275036_朱晗.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/随机变量的数据特征.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/概率论目录.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/特征函数.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/概率论基础知识.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/拓展问题.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论/大数定律和极限定理.md",
+    "vault/redkoldnote/docs/数理基础/概率论/概率论",
+    "vault/redkoldnote/mkdocs.yml",
+    "vault/redkoldnote/docs/算法设计与分析/作业/批改后/assignment1_批改.pdf",
+    "vault/redkoldnote/docs/算法设计与分析/作业/assignment3/231275036 朱晗 作业3.pdf",
+    "vault/redkoldnote/docs/算法设计与分析/作业/assignment2/231275036 朱晗 作业2.pdf",
+    "vault/redkoldnote/docs/算法设计与分析/作业/assignment1/assignment1.pdf",
+    "vault/redkoldnote/docs/金融软件工程/assignments/assignment5",
+    "vault/redkoldnote/docs/金融软件工程/assignments/assignment6",
+    "vault/redkoldnote/2021-11-22-22-49-26.png",
+    "vault/redkoldnote/2021-11-22-22-54-02.png",
+    "vault/redkoldnote/2021-11-22-22-52-49.png",
+    "KoldGoNote/attachments/pizza-13-24.png.png",
+    "KoldGoNote/attachments/Pasted image 20250607140425.png",
+    "KoldGoNote/attachments/Pasted image 20250607133108.png",
+    "KoldGoNote/attachments/Pasted image 20250606235735.png",
+    "KoldGoNote/attachments/exp7-图.png",
+    "KoldGoNote/attachments/Pasted image 20250602125914.png",
+    "KoldGoNote/attachments/Pasted image 20250602104837.png"
+  ]
+}

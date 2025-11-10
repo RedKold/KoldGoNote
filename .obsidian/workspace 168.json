@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "bfbacbaaf193056c",
+    "type": "split",
+    "children": [
+      {
+        "id": "23a4ba6bd919e150",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd92d587dc43ebc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/CS-BAOYAN/机考/机考Home.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "机考Home"
+            }
+          },
+          {
+            "id": "6273cacd86954a1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/CS-BAOYAN/机考/输入输出.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "输入输出"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6f3b77f1deb61f1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce5a5c71532ddc63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7300cf0243090fad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d218d662cb00110a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "5bb3ac34d2952b5c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a7bac53c6c62c372",
+    "type": "split",
+    "children": [
+      {
+        "id": "be1b4f9448bc3426",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69efb6419219c631",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/CS-BAOYAN/机考/输入输出.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "输入输出 的反向链接列表"
+            }
+          },
+          {
+            "id": "66d86ce7856d2eca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KoldGoNote/CS-BAOYAN/机考/输入输出.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "输入输出 的出链列表"
+            }
+          },
+          {
+            "id": "cdb43d3308be7629",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e2c07747a37eb841",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KoldGoNote/CS-BAOYAN/机考/输入输出.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "输入输出 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "slides-extended:Show slide preview": false
+    }
+  },
+  "active": "6273cacd86954a1b",
+  "lastOpenFiles": [
+    "KoldGoNote/CS-BAOYAN/机考/机考Home.md",
+    "KoldGoNote/CS-BAOYAN/机考/输入输出.md",
+    "KoldGoNote/CS-BAOYAN/机考",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/2020级NJU_CSer保研经验贴_外保_.md",
+    "KoldGoNote/CS-BAOYAN/未命名.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/assets/image-1.png",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/assets/isla.jpeg",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/assets/image.png",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/本系预推免+工硕经验.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/常见DP的简要思路.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/有点平平常常普普通通的保研经历.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/最小调试经验.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/弱者的开放日.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/保研经验z.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/保研经历.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/njucs夏令营通关历程.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/assets",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验/2024.6.1开放日上机题目回忆版.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/21级经验",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/经验1.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/经验-ustc.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/混子的保研经历.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/机试经验1.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/机试经验-仅供参考.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/本系夏令营计逝+西交软院+本系工硕.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/外校无望的保研经验.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/夏令营记事.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/保研基础.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/使用VSCode编写C++单文件程序(Windows系统).md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/nju+ustc苏+上高院+哈深+浙软+同济.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/ICT香山&寒武纪.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验/github上的笔试往年题解析.md",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/20级经验",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/test.txt",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/test.cpp",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan/a.exe",
+    "KoldGoNote/CS-BAOYAN/njucs-baoyan",
+    "KoldGoNote/CS-BAOYAN"
+  ]
+}
