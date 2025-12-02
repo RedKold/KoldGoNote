@@ -23,10 +23,13 @@
 		- [[FBDP-3]]
 		- [[FBDP-4]]
 		- [[FBDP-5]]
-		- 
+		- [[FBDP-6]]
+		- [[FBDP-7]]
+		- [[FBDP-8]]
 	- 实验 **40%**
 		- [[FBDP-lab1]]
 		- [[FBDP-lab2]]
+		- [[FBDP-lab3]]
 	- 期末笔试 **50%**
 
 - Data Science
@@ -726,3 +729,118 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security universe
 	- store HBase entrance
 
 - 可与 MapReduce 协同工作
+
+
+## Hive
+
+- Group by
+	- 通常和聚合函数一起用
+
+- **表的分桶**
+	- **分桶是相对于分区进行更细粒度的划分**
+	- 在分区数量过于庞大以至于可能导致文件系统崩溃时，就需要使用分桶来解决问题
+	- 分桶将整个数据内容按照某列属性值的 `hash` 值进行群峰。
+	- **分桶**同样应当在建表的时候就建立
+```
+CLUSTERED BY (Id) into 3 buckets
+```
+
+
+## Spark
+Hadoop MapReduce 暴露了一些问题
+- Berkley AMP 实验室 2009
+- 通用内存并行计算框架
+- 2010: open source
+
+- Spark
+	- Spark SQL
+	- Spark Streaming
+	- MLlib
+	- GraphX
+为什么会有 Spark？
+- Resilient Distributed Datasets (RDDs)
+	- **弹性分布式数据集** Resilient Distributed Datasets (RDDs)
+	- 基于 RDD 之间的弹性关系
+
+
+- Spark 调度器
+	- 主要由两种
+		- DAG Scheduler
+		- Task Scheduler
+	- DAG Scheduler: divide a Job into multiple Stage, based on rely-relation between RDDs
+	- 将 Stage 抽象为任务集 (`TaskSet`) 交给 `TaskScheduler` 进行进一步调度
+
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251201141219.png)
+
+-  ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251201141208.png)
+- Task Scheduler:
+	- Task Scheduler 为每一个 TaskSet 进行任务调度。
+	- Spark 任务调度
+		- FIFO (FIrst-In-First-Out)
+		- FAIR
+
+
+- **执行过程**
+	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251201141319.png)
+	- 从 RDD 的转换和存储角度来看
+		- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251201141342.png)
+		- 
+	- 一个作业就是一张 RDD 世系 (Lineage) 图
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251201140944.png)
+
+### 技术特点
+- **技术特点**
+	- RDD：弹性分布式数据集
+	- Transformation & Action: Spark 通过 RDD 的两种不同类型的运算实现了惰性计算。
+	- Lineage：通过血统关系 Lineage 记录一个 RDD 如果通过其他 RDD 转换过来。保证可以根据父系从新计算，鲁棒性 up
+	- Spark 调度：事件驱动的 Scala 库 Akka 完成。复用线程池取代 MapReduce 进程或者线程启动和切换的开销
+- API: Scala API, also Java, Python
+- Spark 生态
+	- Spark SQL
+	- Spark Streaming
+	- GrpahX
+- Spark 部署
+	- Standalone, YARN, K8S
+- **适合**需要**多次操作特定数据集**的应用场合。
+- **不适合**异步细粒度更新状态的应用
+
+
+
+Spark是一种为大规模数据处理而设计的快速通用的 分布式计算引擎，适合于完成一些迭代式、关系查询、流式处理 等计算密集型任务
+
+
+
+
+
+## 顾荣老师讲座 - Alluxio
+高速跨平台大数据存储系统  Alluxio
+
+All : 跨平台
+lux：the unit of  illuminance
+io: input & output
+
+
+Alluxio **是世界上第一个** 以内存为中心的 (memory-centric ) 的虚拟的分布式存储系统。
+Alluxio 介于计算框架和现有的存储系统之间
+
+**起名字很重要**（前身 tachiyon）
+
+系统框架和原理
+- 整体架构
+	- Master
+		- manage all meta data
+	- Worker
+		- manage local memory, ssd and hdd
+
+- Alluxio：文件数据按**块**处理（block）
+	- file & block store in master
+- Alluxio: 读写行为
+	- 读写类型控制
+	- ReadType, WriteType
+	- explicitly 控制读写类型
+
+- Alluxio 
+	-  透明命名机制
+	- 统一命名空间
+		- 能够将多个数据源中的数据，挂载到 Alluxio 中
+		- 类似于操作系统的不同磁盘管理

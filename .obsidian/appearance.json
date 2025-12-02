@@ -1,4 +1,6 @@
 {
-  "cssTheme": "AnuPpuccin",
-  "theme": "moonstone"
+  "cssTheme": "Minimal",
+  "theme": "system",
+  "baseFontSizeAction": true,
+  "baseFontSize": 15
 }

@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "e94e3ffaaf997468",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9added528b72a7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70188aefdffa3cf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94dc286fbcc0611b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2253c539e270b643",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9257e8b7be39e1c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "14f1e0d260fe022d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "b5f9a8a9723f384f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "e044f6a220b0c66b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5493d80e2847615a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c1a4e849e6b030dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ICS 的反向链接列表"
+            }
+          },
+          {
+            "id": "b33ba4afb7efd729",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ICS 的出链列表"
+            }
+          },
+          {
+            "id": "98dd5d26a9f9977d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0729695218cf6889",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ICS 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "slides-extended:Show slide preview": false
+    }
+  },
+  "active": "0729695218cf6889",
+  "lastOpenFiles": [
+    "ICS - Section 5 程序的链接和加载执行.md"
+  ]
+}

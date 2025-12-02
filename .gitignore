@@ -115,3 +115,6 @@ obsidian/.obsidian/appearance.json
 # 忽略作业
 ./导出pdf作业文件
 
+# 忽略CS-BAOYAN
+./CS/CS-BAOYAN
+

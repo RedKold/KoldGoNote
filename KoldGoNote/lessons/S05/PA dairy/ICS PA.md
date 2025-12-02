@@ -60,3 +60,12 @@ NEMU --> Linux
 在期末考试，你需要掌握 x86-64 的反汇编的阅读能力，背诵二进制代码的指令
 `0x55`：push
 
+
+## 中断的实现
+A little more complex than function **call**
+- 函数调用：保存 PC 到堆栈
+- 中断处理：我们需要保存现场、回复现场
+	- 保存 Error Code
+
+- **缺页错**
+- **权限错**

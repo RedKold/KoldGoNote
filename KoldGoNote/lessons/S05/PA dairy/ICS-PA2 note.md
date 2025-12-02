@@ -215,6 +215,22 @@ static void exec_once(Decode *s, vaddr_t pc) {
 }
 ```
 ## Different Type Optcode
+
+强烈建议阅读手册 G
+
+### U
+**U-type**通常是长立即数的支持
+`lui`: load upper imm
+
+```c
+#define immU() \
+    do	\
+    {   \      
+        *imm = SEXT(BITS(i, 31, 12), 20) << 12;   \
+    } while (0)
+```
+
+其获取立即数并存到寄存器的高 `20` bit。（作符号拓展）
 ### J
 RISC-V 的 **J-Type** 指令用于**无条件跳转和链接**。这种指令的格式非常简单，它将一个 20 位的立即数编码在指令字中，以便实现长距离的跳转。
 
@@ -243,7 +259,11 @@ J-Type 指令只有一个，那就是 `jal`（Jump and Link）。它的 32 位�
 
 ```
 
-
+`jal`: 功能
+- `PC <- SEXT[imm[20:1]<<1]; R[rd]<-PC+4`
+- `jal x1, imm`: **过程调用**
+- `jal x0, imm`: **无条件跳转**
+	- `x0` 是第一个寄存器，在 PA 代码中硬编码为 `0` , 所以这里 `PC+4` 无地方可写，即无条件的跳转（**不回来力**）
 ### 思考：`riscv32` 是如何实现 32bit 大数字的读取的？
 
 `addi, lui`
@@ -917,7 +937,7 @@ static inline uint32_t inl(uintptr_t addr) { return *(volatile uint32_t *)addr; 
 > static inline uint32_t inl(uintptr_t addr) 
 > { return *(volatile uint32_t *)addr; }
 > ```
-> 这里我们使用 `volatile` 关键字避免 **编辑器优化**，其实也是保证 `nemu` 能够执行我们想要的访存命令。
+> 这里我们使用 `volatile` 关键字避免 **编译器优化**，其实也是保证 `nemu` 能够执行我们想要的访存命令。
 > 
 > 所以 `lw,lb,lh` 等访存指令中有相关的信息。继续阅读 `nemu` 代码
 > 

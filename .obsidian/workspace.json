@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "515730aa63937471",
+        "id": "02b6d49a4aafb1fd",
         "type": "tabs",
         "children": [
           {
-            "id": "b5e21cd0ae1f9d97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/Web开发/HBase Shell.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HBase Shell"
-            }
-          },
-          {
-            "id": "9eb09febb61bf0c9",
+            "id": "de0d7b13b2b0907d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,21 +22,35 @@
             }
           },
           {
-            "id": "0fe1cfea44b10d8b",
+            "id": "e93162aa8fafd4dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "file": "ics-6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "金融计量学 FE"
+              "title": "ics-6"
             }
           },
           {
-            "id": "588ccd0b501170bb",
+            "id": "b72173e385c72704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/FE 金融计量学.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FE 金融计量学"
+            }
+          },
+          {
+            "id": "0aad5ff2c5a2b357",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,21 +64,21 @@
             }
           },
           {
-            "id": "28844f88c3321bc7",
+            "id": "1f14c7549292dfc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KoldGoNote/大创/Cross-Entrophy Method.md",
+                "file": "KoldGoNote/lessons/S05/FBDP Home 金融大数据处理技术.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cross-Entrophy Method"
+              "title": "FBDP Home 金融大数据处理技术"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +118,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "KL",
+                "query": "readelf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -143,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2b5f3bd6cbe6e0d1",
@@ -159,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "file": "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +170,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "金融计量学 FE 的反向链接列表"
+              "title": "DLCO-0 数字逻辑与计算机组成 的反向链接列表"
             }
           },
           {
@@ -178,12 +179,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "file": "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "金融计量学 FE 的出链列表"
+              "title": "DLCO-0 数字逻辑与计算机组成 的出链列表"
             }
           },
           {
@@ -207,13 +208,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "KoldGoNote/lessons/S05/金融计量学 FE.md",
+                "file": "ics-6.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "金融计量学 FE 的大纲"
+              "title": "ics-6 的大纲"
             }
           },
           {
@@ -226,7 +227,8 @@
               "title": "Quiet Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -245,35 +247,35 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0fe1cfea44b10d8b",
+  "active": "e93162aa8fafd4dc",
   "lastOpenFiles": [
-    "ICS-PA3 note.md",
-    "KoldGoNote/lessons/S05/assignments/ICS-5.md",
     "KoldGoNote/lessons/S05/ICS.md",
-    "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
-    "ICS-5.md",
+    "ics-6.md",
+    "DLCO-lab4-report(1).md",
+    "KoldGoNote/lessons/S05/FE 金融计量学.md",
+    "CS/CS-BAOYAN/njucs-baoyan/README.md",
+    "DLCO-lab4-report.md",
+    "KoldGoNote/lessons/S05/FBDP Home 金融大数据处理技术.md",
+    "KoldGoNote/lessons/S05/assignments/FBDP-7.md",
     "CS/CS-BAOYAN/好题记录-HaoTi.md",
-    "CS/小卡片/格雷码.md",
-    "CS/Web开发/HBase Shell.md",
-    "CS/Web开发/博客.md",
+    "CS/CS-BAOYAN/njucs-baoyan/21级经验/保研经验z.md",
     "KoldGoNote/大创/CE 实验.md",
-    "KoldGoNote/大创/Cross-Entrophy Method.md",
-    "KoldGoNote/大创/Cross-Entropy Method 2.md",
-    "KoldGoNote/大创/meeting1/读MES记录.md",
-    "DLCO-BooleanAlgebra.md",
-    "KoldGoNote/lessons/S05/ICS - Section 3 程序的转换和指令系统.md",
-    "KoldGoNote/lessons/S05/DLCO 数字逻辑与计算机组成.md",
-    "KoldGoNote/lessons/S05/assignments/DLCO-lab3-report.md",
+    "公司金融学实训.md",
+    "KoldGoNote/Daily/2025-12-01_周一.md",
+    "FE - 研究pre.md",
+    "KoldGoNote/Daily/2025-11-29_周六.md",
+    "ICS-PA3 note.md",
+    "KoldGoNote/lessons/S05/PA dairy/ICS PA.md",
+    "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
+    "CE - 新的启发-1129.md",
+    "FBDP-lab3.md",
+    "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
+    "ICS-PA3 note(1).md",
+    "KoldGoNote/Daily/2025-11-25_周二.md",
+    "APMCM.md",
+    "KoldGoNote/lessons/S05/assignments/FBDP-8.md",
+    "FBDP-8.md",
     "CS/小卡片",
-    "KoldGoNote/lessons/S05/数字逻辑与计算机组成(1).md",
-    "KoldGoNote/lessons/S05/assignments/ICS-3.md",
-    "KoldGoNote/lessons/S05/ICS - Section 4 程序的机器级表示.md",
-    "vault/redkoldnote/docs/本科课程/计算机网络/exams/2020-re-network-exam.md",
-    "KoldGoNote/lessons/S05/FBDP 金融大数据处理技术.md",
-    "ICS-PA2 report.md",
-    "Gauss-Markov假设.md",
-    "KoldGoNote/Daily/2025-10-30_周四.md",
-    "KoldGoNote/Daily/2025-11-05_周三.md",
     "CS/Bash",
     "大创",
     "CS/Unity",

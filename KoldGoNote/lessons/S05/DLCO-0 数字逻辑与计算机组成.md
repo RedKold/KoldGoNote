@@ -1,3 +1,6 @@
+---
+本科课程: DLCO
+---
 名称
 - 数字逻辑和计算机组成
 - 考核
@@ -6,12 +9,14 @@
 		- [[DL-CO-3]]
 		- [[DL-CO-4]] 
 		- [[DLCO-6]]
+		- [[DLCO-7]]
 
 	- 六次实验成绩: 35% （实验验收、报告）
 		- [[ DLCO-labs-note| About labs]] 
 		- [[DLCO-lab1-report]]
 		- [[DLCO-lab2-report]]
 		- [[DLCO-lab3-report]]
+		- [[DLCO-lab4-report]]
 
 
 - 世界上第一台电子计算机 ABC（非通用）
@@ -287,8 +292,238 @@ F-->A
 ### RISCV 寄存器约定
 可以阅读 [[ICS-PA2 note#`riscv` 如何判别 `call` 和 `ret`？|riscv判别`call`和`ret`的办法]]
 
+### 具体指令
+
+你参加的 PA 是 `riscv32` 的，这对你再熟悉不过 [[ICS-PA2 note]] 
+
+**这门课需要你更注意一些基于这些最基本指令的高级语言层面操作**。
+
+> [!Note] `long long` 64bit 数相加的机器级表示
+> x 的高、低 32 位分别存放 `x13`, `x12`
+> y 的高、低 32 位分别存放 `x15`, `x14`
+> z 的高、低 32 位分别存放 `x11`, `x10`
+
+ 在以上假设下，我们可以用 `sltu` 将低 32 位的进位加入到高 `32` 位中
+- **为什么**？如果 `sum < 两个加数`，一定产生了进位。
+```asm
+add 	x10,	x12,	x14
+sltu	x11,	x10,	x12		// if x11(low_x+low_y) < x12, then R[x11]<-1
+add		x16,	x13,	x15		// R[x16]<-R[x13]+R[x15] (high_x+high_y)
+add		x11,	x11,	x16		// R[x11]<-R[x11]+R[x16]	(compute carry bit)
+```
 
 
 
 
 
+
+## CPU  中央处理器
+- 指令执行过程
+- CPU 的基本组成
+	- **操作元件**(组合逻辑元件)
+	- 状态/存储元件（时序逻辑元件）
+- 数据通路与时序控制
+- 计算机性能和 CPU 时间
+### CPU 基本组成
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103116.png)
+
+
+### CPU 基本结构
+- 计算机的五大组成部分
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103435.png)
+
+- Control Unit （控制器）
+	- 指令的控制部件
+- Datapath （**数据通路**）
+	- 指令的执行部件
+- Memory
+- Input
+- Output
+
+ **除了存储元件**，**都是组合逻辑电路**。
+#### 数据通路
+- **两类元件**
+	- 组合逻辑（操作元件）
+	- 时序逻辑（状态元件、存储元件）
+- 元件间的连接方式
+	- 总线连接方式
+	- 分散链接方式
+- 数据通路的具体工作
+	- 进行数据存储、处理、传送
+
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103855.png)
+
+- **数据通路**是由 **操作元件** 和 **存储元件** 通过总线方式或分散方式连接而成的进行数据存储、处理、**传送的路径**。
+
+#### 存储元件：寄存器和寄存器组
+- 寄存器 (Register)
+	- has a `Write Enable-WE` signal
+	- `0`: when clock edge come, output stay the same
+	- `1`: when clock edge come, output is becoming the input
+- 寄存器组 (Register File)
+	- **Two** read port (组合逻辑)
+		- busA, busB
+		- address given by `RA`, `RB`
+		- After a Access Time, busA busB becoming valid
+	- **One** write port (时序逻辑)
+		- Write Enable == 1:
+			- when clock edge come, write the value from busW to the register assigned by RW
+
+
+#### 时序控制
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112426.png)
+- **锁存延迟**(Latch Prop, a.k.a Clk-to-Q)，即触发器的锁存延迟
+- **时钟偏移**(Clock Skew): 由于工艺、走线延迟等原因造成的时钟信号的偏差。
+- Longest Delay Path: **关键路径**。组合逻辑的最长路径。
+
+
+- **现代时钟周期**
+
+
+#### CPU 性能
+- CPU **执行时间**
+	- CPI: Cycles Per Instructions
+- Time to do the **task**
+	- response time
+	- execution time
+	- latency
+- Tasks per day, hour, sec, ns...
+	- 吞吐率 (throughput)
+	- 带宽（bandwidth）
+
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112601.png)
+
+CPU 性能 (CPU performance): User CPU time
+系统性能 (System performance): 一般指没有其他负载时的响应时间
+$$
+吞吐率=单位时间内运行的作业(指令)数(有或无负载/干扰)
+$$
+
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114115921.png)
+
+
+**产品宣称指标**：Marketing Metrics
+
+- MIPS
+- MFLOPS
+
+
+
+
+### 设计处理器的步骤
+确定 ISA 后，我们进行处理器设计的大致步骤：
+
+- **分析每条指令的功能**，并用 RTL（Register Transfer Language）来表示
+- 根据指令的功能给出所需的元件，并考虑如何将他们互连
+- 确定每个元件所需控制信号的取值
+- 汇总所有指令所涉及到的控制信号，生成一张反映指令与控制信号之间关系的表
+- 根据表得到每个控制信号的逻辑表达式，据此设计控制器思路
+
+
+我们用 RISC-V 所例子
+
+## 数据通路
+
+
+指令执行结果总是在下一个时钟到来时开始保存在**寄存器**或 **存储器** 或 **PC** 中
+
+
+### 指令开始时，取指部件中的动作
+Fetch instruction: `Instruction <- M[PC]`
+- All instruction is same
+- When clock signal come, PC is updated to `s->dnpc` (dynamic next pc)
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251121114200.png)
+- previous: 上一条指令遗留下的指令
+![image.png|800](https://kold.oss-cn-shanghai.aliyuncs.com/20251121114600.png)
+
+- R-type 控制信号：
+	- `RegWr = 1`: 我们需要写入寄存器
+	- `ALUASrc = 0`: 
+		- 我们不需要 `imm` ,自然也不需要立即数
+	- `ALUctr = add/slt/sltu`
+	- `Jump` 和 `Branch` 都是 `0`，只有 `J/B` 才为 1
+	- `ExtOp = x` (任意)，即 R 不需要拓展立即数
+	- `ALUBSrc = 0`
+		- 我们不需要 `imm` ,自然也不需要立即数
+	- `MemWr =0`
+		- R 型不需要读写内存
+	- `MemtoReg = 0`
+		- 同理
+
+
+- U-type 控制信号
+![image.png|800](https://kold.oss-cn-shanghai.aliyuncs.com/20251126141030.png)
+
+
+## 多周期处理器
+
+思想：
+- 把每条指令的执行，**分为多个阶段**。每个阶段在一个或多个时钟周期内完成；
+- 每个时钟周期称为一个**状态**，期间最多完成一次访存或一次寄存器读写或一次 ALU 操作。
+- 每个时钟内的执行结果在下个时钟到来前，保存到相应存储元件或者稳定地保持在组合电路中
+- **时钟周期的宽度以最复杂**阶段的所用的时间为准。
+
+**思考**：指令有几个阶段？
+1. fetch inst 
+	- read storage
+	- read inst due to pc. put it in `IR`
+	- IR will not be update at every clock. So it need a write-enable
+	- when fetch-inst ended, `alu` output is `PC+4`, send it to input of PC. But, you can't update `pc` at every clock. so pc need a write-enable
+2. decode / read register
+	- after control-logic-delay, update control signal
+	- do read register, and decode
+	- `alu` is free at this period. You can use it 
+3. alu
+4.  read/write store
+5. write the result
+
+**多周期处理器的好处**
+- 时钟周期更短
+- **不同指令所用的周期数可以不同**
+	- 如 `Load: 4? 5? cycles`
+	- Others: `2? 3? 4? cycles`
+
+
+简单指令系统-对应的多周期 CPU：
+
+- **控制器**：提供一个 of，zf 的寄存器
+- **指令寄存器**：
+- **MAR**
+	- 给出数据地址
+![image.png|800](https://kold.oss-cn-shanghai.aliyuncs.com/20251128102308.png)
+- **有个三态门**：`PCout, MARout,` **控制能否向总线** 写出
+- 我们把地址总线、控制总线、数据总线简化画成了一个大总线。
+	- `PCout, MARout` 走地址总线。**数据送到主存**
+
+#### 各类指令执行过程
+- 取指令并计算下一条指令地址：`IFetch`
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104812.png)
+- 译码并取数（公共操作）记为 `Rfetch/ID`
+- **投机计算**：当前时钟结束，下个时钟来之前可以投机计算
+	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104914.png)
+	- **所有控制信号不是同时生成的**。
+- R-型指令的执行。两个时钟周期：`RExec, RFinisih`
+	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128105456.png)
+
+- I-型指令的执行，需要两个时钟周期。`IExec, IFinish`
+- Load 指令：地址已经投机计算，还需两个时钟周期。`lwExec, lwFinish`
+	- 根据投机计算好的地址（MAR中）到主存中取数，送MDR，再将MDR内容写入Rt。
+- Store 指令：地址已经投机计算。还需要两个时钟周期 `swExec, swFinish`
+- Jump 指令：计算转移目标地址。送 PC。需一个时钟周期
+- 
+
+
+- 状态转换图
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128112928.png)
+
+
+**多周期控制器的实现**
+**回忆单周期**：控制信号在指令执行过程是不变的。用真值表可以反映指令和控制信号的关系。
+
+但是多周期
+- 每个指令周期不同
+- 控制信号取值不同
+前面我们已经讨论了指令执行的不同阶段，受此启发，**可以构造状态转移图**。
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114515.png)
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114530.png)
+- 和状态转移图完全对应。

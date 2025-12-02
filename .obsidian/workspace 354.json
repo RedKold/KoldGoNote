@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "0bb29d03e175c1ed",
+    "type": "split",
+    "children": [
+      {
+        "id": "9100f9a2a0ba482e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08b09d548529df40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ICS-PA3 note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS-PA3 note"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dab62e3db2519f7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "891ff7a7451c89e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a4ef07bf3bdb957",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a4bdc58da39e075b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "f39d850706da1941",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d3ed5f716f4ede5",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd8307e540d1ecce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fd1d9a2bae61ca5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ICS-PA3 note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "ICS-PA3 note 的反向链接列表"
+            }
+          },
+          {
+            "id": "41f3d283b536eca7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ICS-PA3 note.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ICS-PA3 note 的出链列表"
+            }
+          },
+          {
+            "id": "755626212313c98d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "6fa58a5229ff8f15",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ICS-PA3 note.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "ICS-PA3 note 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "slides-extended:Show slide preview": false
+    }
+  },
+  "active": "08b09d548529df40",
+  "lastOpenFiles": []
+}
