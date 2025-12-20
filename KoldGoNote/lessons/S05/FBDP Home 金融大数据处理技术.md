@@ -26,10 +26,12 @@
 		- [[FBDP-6]]
 		- [[FBDP-7]]
 		- [[FBDP-8]]
+		- [[FBDP-9]]
 	- 实验 **40%**
 		- [[FBDP-lab1]]
 		- [[FBDP-lab2]]
 		- [[FBDP-lab3]]
+		- [[FBDP-lab4]]
 	- 期末笔试 **50%**
 
 - Data Science
@@ -762,6 +764,7 @@ Hadoop MapReduce 暴露了一些问题
 	- **弹性分布式数据集** Resilient Distributed Datasets (RDDs)
 	- 基于 RDD 之间的弹性关系
 
+#### 调度过程
 
 - Spark 调度器
 	- 主要由两种
@@ -794,13 +797,15 @@ Hadoop MapReduce 暴露了一些问题
 	- Transformation & Action: Spark 通过 RDD 的两种不同类型的运算实现了惰性计算。
 	- Lineage：通过血统关系 Lineage 记录一个 RDD 如果通过其他 RDD 转换过来。保证可以根据父系从新计算，鲁棒性 up
 	- Spark 调度：事件驱动的 Scala 库 Akka 完成。复用线程池取代 MapReduce 进程或者线程启动和切换的开销
-- API: Scala API, also Java, Python
+- API: Scala API, also Java, Python 等的支持。
 - Spark 生态
 	- Spark SQL
 	- Spark Streaming
 	- GrpahX
+	- 适合应用不同的计算模式和计算任务
 - Spark 部署
 	- Standalone, YARN, K8S
+	- 可以部署在多种底层平台上
 - **适合**需要**多次操作特定数据集**的应用场合。
 - **不适合**异步细粒度更新状态的应用
 
@@ -809,7 +814,35 @@ Hadoop MapReduce 暴露了一些问题
 Spark是一种为大规模数据处理而设计的快速通用的 分布式计算引擎，适合于完成一些迭代式、关系查询、流式处理 等计算密集型任务
 
 
+### RDD 容错实现
+- RDD lineage
+- 窄依赖，细粒度容错
 
+
+### Programming
+#### ` wordcount`
+```scala
+val file = spark.textFile("hdfs://.. ")
+val counts = file.flatMap (line => line.split(""))
+	//分词
+	.map(word =>(word, 1))
+	//对应mapper的工作
+	.reduceByKey(_ + _ )
+	//相同key的不同value之间进行”+”运算
+	counts.saveAsTextFile ("hdfs://...")
+```
+
+这里面 `map` 操作表示对列表中的每个元素应用一个函数（有点像 C#）
+函数可以写成 `x => f(x)`, where `x` can be write as `_`
+`flatMap` 做了一个扁平化的操作，也就是将 map 之后形成的类似于 `List(List(1,2), list(3,4))` 扁平化为 `List(1,2,3,4)`
+
+`reduceByKey`：我们对相同 key 的不同 value 加运算，简写为 `reduceByKey(_ + _)`
+
+
+#### 二次排序
+```scala
+
+```
 
 
 ## 顾荣老师讲座 - Alluxio
@@ -844,3 +877,59 @@ Alluxio 介于计算框架和现有的存储系统之间
 	- 统一命名空间
 		- 能够将多个数据源中的数据，挂载到 Alluxio 中
 		- 类似于操作系统的不同磁盘管理
+
+
+
+## Spark Advanced Programming
+
+- **DataFrame**
+	- 让 Spark 有了处理大规模结构化数据的能力
+	- 比 RDD 转化更简单实用
+- **DataSet**
+	- distributed collection of data.
+	- dataset is a new interface added in Spark 1.6
+	- provides the benefits of RDDs (strong typing, ability to use powerful. lambda functions)
+		 - strong typing **强类型支持**
+		 - IDE **中在线检查**。
+
+
+
+- **标记点**
+	- **本地向量**和一个**标签**(`Int`, `Double`) 
+
+- **稀疏数据**
+	- MLib 可以读取存储为 LIBSVM 格式的数据。每一行代表一个带有标签的稀疏特征向量
+
+- Spark SQL
+- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251218214138.png)
+
+
+- Spark MLlib:
+	- load data
+	- transform data to format you need 
+	- set parameter of the algorithm
+	- call models to train
+	- predict
+	- evaluate your model
+
+
+- Spark ML 
+	- 整个过程抽象为 Pipeline
+	- Spark ML Library provides high-performance API, based on *DataFrame*.
+	- Core Concept:
+		- *Data Frame*
+			- Use Spark SQL *DataFrame* as a ML dataset
+		- *Transformer*
+			- Implement a algorithm, transform a *DataFrame* to another *DataFrame*
+			- `transform()` 
+		- *Estimator*
+			- fit a *DataFrame*, algorithm generating another *Transformer*
+			- `fit()`
+		- *Pipeline*
+
+
+- Spark Streaming:
+	- **Spark Streaming** makes it easy to build scalable fault-tolerant streaming applications
+	- 把实时数据视为一个不断更新追加的表。
+	- 导致了一个新的流处理模型
+	- similar to batch model

@@ -604,5 +604,28 @@ Context* __am_irq_handle(Context *c) {
 #ifdef CONFIG_STRACE
 	printf("STRACE: syscall ID = %d, syscall name is %s\n", a[0], sys2str[a[0]])      ;
 #endif
-
 ```
+
+
+
+之前的一些笔记丢失了
+## 展示你的批处理系统
+**实现**`SYS_execve` 系统调用
+细节不再赘述。`man execve` 即可。值得注意的是，如果成功，该系统调用是没有返回值的（以免干扰栈，影响打开应用）
+
+
+支持 `NTERM`
+
+注意，如果你修改了游戏文件，**你需要重新安装游戏文件**。`make ISA=$ISA fsimg` 来完成修改！
+
+
+仙剑奇侠传运行发生色彩异常，人物脸色发蓝。而正常人应该是黄色脸
+
+猜测可能是因为颜色映射问题
+我们使用的编码是 `AA RR GG BB` 格式，但是 `SDL_Color` 联合体是 `r g b a | val`
+我们之前代码直接访问联合体的 `val`，这样等价于颜色是 `RR GG BB AA` 格式，不符合要求。
+
+直观来说，我们应该是将 `AA` 映射到了 BB ，导致发蓝。
+
+修正后，色彩正常
+![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251212153832.png)

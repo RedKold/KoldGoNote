@@ -415,7 +415,172 @@ public:
 };
 ```
 
+## Sliding Window
+### [3652. 按策略买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-using-strategy/)
+给你两个整数数组 `prices` 和 `strategy`，其中：
+
+- `prices[i]` 表示第 `i` 天某股票的价格。
+- `strategy[i]` 表示第 `i` 天的交易策略，其中：
+    - `-1` 表示买入一单位股票。
+    - `0` 表示持有股票。
+    - `1` 表示卖出一单位股票。
+
+同时给你一个 **偶数** 整数 `k`，你可以对 `strategy` 进行 **最多一次** 修改。一次修改包括：
+
+- 选择 `strategy` 中恰好 `k` 个 **连续** 元素。
+- 将前 `k / 2` 个元素设为 `0`（持有）。
+- 将后 `k / 2` 个元素设为 `1`（卖出）。
+
+**利润** 定义为所有天数中 `strategy[i] * prices[i]` 的 **总和** 。
+
+返回你可以获得的 **最大** 可能利润。
+
+**注意：** 没有预算或股票持有数量的限制，因此所有买入和卖出操作均可行，无需考虑过去的操作。
+
+**注意**： `k` 都是偶数
+
+#### 思路
+做这个题的时候，由于 k 是连续的一个区间，容易想到用滑动窗口。
+我们可以在这个窗口里统计：我们的修改策略的增益值 `new_ans`, 同时维护一个所有窗口中增益值的最大值 `max_diff`
+由于这个滑动窗口在移动的时候，只需要增加最右侧新的增益值，在窗口满的时候，需要去掉左侧增益值。由于窗口移动，`k/2` 也会改变，我们还需要把 `mid = (new_l + new_r)/2` 处的增益值做一个修改，具体来说是 `stragegy : 1 -> 0`, 即差了一个 `prices[mid]`
+
+滑动窗口的更新相当简单，可以退化成一个 `l，r` 下标来维护。
+
+最后判断，如果增益值为正，即返回增益值+不作修改时候的答案 `max_diff + ans`
+否则，返回原答案。
+
+时间复杂度为 $O(n)$, 一次遍历。
+
+
+#### Code
+```cpp
+class Solution {
+public:
+    long long maxProfit(vector<int>& prices, vector<int>& strategy, int k) {
+        int n=prices.size();
+        deque<int> q;
+
+        long long ans = 0;
+        long long new_ans =0;
+        long long max_diff=0;
+        int l=0;
+        int r=k-1;
+        for(int i=0;i<n;i++){
+            ans+=prices[i] * strategy[i];
+            // maintain a sliding window by index
+            if(i<=(l+r)/2){
+                new_ans+= prices[i] * (0-strategy[i]);
+            }
+            else if(i<=r){
+                new_ans+=prices[i] * (1-strategy[i]);
+                max_diff=max(new_ans,max_diff);
+            }
+            // i>r
+            else{
+                int old_l = l;
+                l++;
+                r++;
+                new_ans-=prices[old_l] * (0-strategy[old_l]);
+                new_ans+=prices[r] * (1-strategy[r]);
+                // update mid;
+                int mid=(l+r)/2;
+                new_ans-=prices[mid];
+                max_diff=max(new_ans,max_diff);
+            }
+        }
+        max_diff = max(max_diff, new_ans);
+        return max_diff>0? max_diff+ans : ans;
+    }
+};
+```
 ### 贪心
 https://leetcode.cn/problems/maximum-running-time-of-n-computers/solutions/1214304/er-fen-da-an-de-checkhan-shu-de-si-kao-f-g8no/
 - 二分题。
 - 
+
+
+## 树上动态规划
+
+### [3562. 折扣价交易股票的最大利润](https://leetcode.cn/problems/maximum-profit-from-trading-stocks-with-discounts/)
+
+## 记忆化搜索和动态规划
+### [188. Best Time to Buy and Sell Stock IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/)
+#### 思路
+
+#### Code
+
+**如果用记忆化搜索**：
+
+这里要注意边界情况：
+- 如果 `j<0`，即不合法的购买，我们直接返回不合法的值，用 `INT_MIN` 即 `-inf`
+- 如果是不合法的天 `i<0`，不可能 hold，但是不持有股票的话，是可以看作合法的边界转移的
+
+```cpp
+class Solution {
+public:
+    int maxProfit(int k, vector<int>& prices) {
+        int n=prices.size();
+        vector memo(n, vector<array<int,2>>(k+1, {-1,-1}));
+        auto dfs=[&](this auto&&dfs, int i, int j, bool hold) ->int {
+            if(j<0){
+                // not valid
+                return INT_MIN/2;
+            }
+            if(i<0){
+                return hold? INT_MIN /2 :0;
+            }
+
+            int&res=memo[i][j][hold];
+            if(res!=-1){
+                return res;
+            }
+
+            // buy one, and sell one, is a traction
+            if(hold){
+                // j-1 in buy
+                res = max(dfs(i-1, j-1,false)-prices[i], dfs(i-1, j,true));
+                return res;
+            }
+            else{
+                res = max({dfs(i-1, j, false), dfs(i-1, j, true)+prices[i]});
+            }
+
+            return res;
+        };
+
+        return dfs(n-1, k, false);
+    }
+};
+```
+
+**格外注意一个细节**：我们只需要在卖出或者买入的时候，**记录交易次数的变化**，即 `j-1`。重复记录是不合乎题意的。
+
+1:1转化为递推：
+
+```cpp
+class Solution {
+public:
+    int maxProfit(int k, vector<int>& prices) {
+        int n=prices.size();
+        vector dp(n+1, vector<array<int,2>>(k+2, {INT_MIN/2 ,INT_MIN/2}));
+        // init: -1 th day, cannot hold
+        for(int j=1;j<=k+1;j++){
+            dp[0][j][0]=0;
+        }
+
+        for(int i=0;i<n;i++){
+            for(int j=1;j<=k+1;j++){
+                // j: times we sell
+                dp[i+1][j][0] =
+                    max(dp[i][j][0], dp[i][j-1][1]+prices[i]);
+                dp[i+1][j][1] =
+                    // only one need to decline the j
+                    max(dp[i][j][0]-prices[i], dp[i][j][1]);
+            }
+        }
+        return dp[n][k+1][0];
+
+    }
+};
+```
+这里我们仅在买入的时候记录交易次数。

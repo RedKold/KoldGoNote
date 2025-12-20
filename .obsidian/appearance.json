@@ -1,6 +1,7 @@
 {
-  "cssTheme": "Minimal",
-  "theme": "system",
-  "baseFontSizeAction": true,
-  "baseFontSize": 15
+  "cssTheme": "Obsidian Nord",
+  "translucency": true,
+  "nativeMenus": true,
+  "accentColor": "",
+  "monospaceFontFamily": "Consolas,Cascadia Mono"
 }

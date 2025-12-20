@@ -1,4 +1,7 @@
 ## Section 5 程序的链接和加载执行
+
+本文结合了 CMU CSAPP 课程和 NJU ICS 的内容
+由于 CSAPP 英文讲授~~且英文打起来更方便~~, 多数用英文书写。
 ### ELF
 
 Executable and Linkable Format
@@ -32,6 +35,7 @@ Executable and Linkable Format
 - **Local symbols**(本地符号)
 	- 由模块 `m` 定义和引用的带 `static` 的函数名和变量名。因其生存期为整个程序运行过程，故并不分配在栈中，而是分配在 `static data` 区（静态数据区），即在 `.data` 或 `.bss` 节中分配空间。
 		- 如 `swap.c` 中的 `static` 变量名 `bufp1`
+		- `.data` 中的有初值，`.bss` 一般默认为 0
 ### 目标文件 `ELF` 中的符号表
 
 可以参考阅读[[ICS-PA2 note#阅读符号表，对照字符表|如何阅读符号表]]
@@ -79,7 +83,8 @@ Executable and Linkable Format
 	- **Code**
 	- function store in here too.
 - `.rodata` section
-	- Read only data: jump tables(in `switch`), ...
+	- Read only data: jump tables(in `switch`), 
+	- some const **number**
 - `.data` section
 	- **Initialized global variables**
 - `.bss` section
@@ -90,21 +95,20 @@ Executable and Linkable Format
 
 - `.symtab` section
 	- Symbol table
-	- Procedure and static variable names
-	- Section names and **locations**
+	- *Procedure* and static *variable* names
+	- Section *names* and ***locations***
 - `.rel` `.text` section
-	- Relocation info for `.text` section
-	- Addresses of instructions that will need to be modified in the executable
+	- *Relocation* info for `.text` section
+	- *Addresses* of instructions that will need to be modified in the executable
 - `.rel` `.data` section
-	- Relocation info for `.data` section
-	- Addresses of pointer data that will need to be modified in the merged executable
+	- *Relocation* info for `.data` section
+	- *Addresses* of pointer data that will need to be modified in the merged executable
 - `.debug` section
-	- Info for symbolic debugging (`gcc -g`)
+	- Info for symbolic *debugging* (`gcc -g`)
 	- provide **Information** that relates line numbers to in the source code to line **numbers** in the machine code.
 	- that why we can use `gdb`
 - `Section header table`
 	- `Offset` and `Size` of each section
-
 
 #### Linker Symbols
 - **Global symbols**
@@ -142,6 +146,12 @@ int g()
 - Program symbols are **either *strong* or *weak***
 	- ***Strong***: procedures and initialized globals
 	- ***Weak***: uninitialized globals
+	- 新标准：
+	- ***Common***: unallocated uninitialized globals
+		- Linker will tell how to link this common symbol later.
+	- **Weak***: GCC 拓展的属性指示符 `__attribute__(week)`
+		- 这个 `weak` 会被更强的所链接。
+
 ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251108145559.png)
 
 
@@ -150,7 +160,7 @@ int g()
 		- Each item can be defined only once
 		- Otherwise: linker's error
 	- **Rule 2: Given a strong symbol and multiple weak symbols, choose the strong symbol**
-		- References to the weak symbol resolve to the strong symbol
+		- References to the weak symbol *resolve* to the **strong** symbol
 	- **Rule 3: If there are multiple weak symbols, pick an arbitrary one**
 		- Can override this with `gcc -fno-common`
 			- Or `-Werror`

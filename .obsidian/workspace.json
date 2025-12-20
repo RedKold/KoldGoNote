@@ -1,19 +1,47 @@
 {
   "main": {
-    "id": "636fe30d4bd03a85",
+    "id": "000a796ccb3c8656",
     "type": "split",
     "children": [
       {
-        "id": "02b6d49a4aafb1fd",
+        "id": "2f871db1309a9bdb",
         "type": "tabs",
         "children": [
           {
-            "id": "de0d7b13b2b0907d",
+            "id": "5564d4d496039ff0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KoldGoNote/lessons/S05/ICS.md",
+                "file": "KoldGoNote/lessons/S05/assignments/DLCO-7(1).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DLCO-7(1)"
+            }
+          },
+          {
+            "id": "de1b3b32ec658cf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/assignments/ICS-5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ICS-5"
+            }
+          },
+          {
+            "id": "aa3d9bcffbbf02d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KoldGoNote/lessons/S05/ICS/ICS.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,78 +50,63 @@
             }
           },
           {
-            "id": "e93162aa8fafd4dc",
+            "id": "96d7ec2febbe9fa6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ics-6.md",
+                "file": "KoldGoNote/lessons/S05/ICS/ics - section 6 内存层次结构 memory hierarchy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ics-6"
+              "title": "ics - section 6 内存层次结构 memory hierarchy"
             }
           },
           {
-            "id": "b72173e385c72704",
+            "id": "06b613d2b3914e46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KoldGoNote/lessons/S05/FE 金融计量学.md",
+                "file": "KoldGoNote/lessons/S05/ICS/ICS - Section 2 ：数据的机器级表示与处理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FE 金融计量学"
+              "title": "ICS - Section 2 ：数据的机器级表示与处理"
             }
           },
           {
-            "id": "0aad5ff2c5a2b357",
+            "id": "47c3c0c7491f5de5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/CS-BAOYAN/好题记录-HaoTi.md",
+                "file": "KoldGoNote/lessons/S05/ics - section 8 异常处理控制流.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "好题记录-HaoTi"
-            }
-          },
-          {
-            "id": "1f14c7549292dfc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "KoldGoNote/lessons/S05/FBDP Home 金融大数据处理技术.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FBDP Home 金融大数据处理技术"
+              "title": "ics - section 8 异常处理控制流"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b15341615ffe13d8",
+    "id": "bd2f0e874989d7bb",
     "type": "split",
     "children": [
       {
-        "id": "be78c5257c9a122f",
+        "id": "16c76d1417532306",
         "type": "tabs",
-        "dimension": 60.49079754601226,
         "children": [
           {
-            "id": "0e2bb6f505a528e2",
+            "id": "f37cd42fdbd5b496",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -102,23 +115,16 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
-          }
-        ]
-      },
-      {
-        "id": "8f5918b3b24dcad8",
-        "type": "tabs",
-        "dimension": 39.50920245398773,
-        "children": [
+          },
           {
-            "id": "7597041e513f2f09",
+            "id": "5f9242ada77c2328",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "readelf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,11 +132,11 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
-            "id": "ee46886fd9f1765f",
+            "id": "73ab5eba4c423e49",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -143,25 +149,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "2b5f3bd6cbe6e0d1",
+    "id": "9cb2dc81b0f1cfca",
     "type": "split",
     "children": [
       {
-        "id": "1cb493fe93efe697",
+        "id": "13a1a8a7f8a29a6f",
         "type": "tabs",
         "children": [
           {
-            "id": "6fbe17b85f2b6b8d",
+            "id": "e19277bac057cfa2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
-                "collapseAll": false,
+                "file": "KoldGoNote/lessons/S05/ICS/ICS.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -170,25 +175,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "DLCO-0 数字逻辑与计算机组成 的反向链接列表"
+              "title": "Backlinks for ICS"
             }
           },
           {
-            "id": "4bbf069eeaea9228",
+            "id": "20fe8fd6bd39b763",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
+                "file": "KoldGoNote/lessons/S05/ICS/ICS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "DLCO-0 数字逻辑与计算机组成 的出链列表"
+              "title": "Outgoing links from ICS"
             }
           },
           {
-            "id": "302794ce6fe888e4",
+            "id": "bdf445459208cef3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -203,97 +208,81 @@
             }
           },
           {
-            "id": "f62b66d8ccb44cdc",
+            "id": "b89399cd6b249f75",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c85de8f6527b5366",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "ics-6.md",
+                "file": "KoldGoNote/lessons/S05/ICS/ICS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ics-6 的大纲"
-            }
-          },
-          {
-            "id": "3a5d4b001a393e25",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {},
-              "icon": "lines-of-text",
-              "title": "Quiet Outline"
+              "title": "Outline of ICS"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "slides-extended:Show slide preview": false,
-      "bases:创建新数据库": false,
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "slides-extended:Show slide preview": false
     }
   },
-  "active": "e93162aa8fafd4dc",
+  "active": "aa3d9bcffbbf02d2",
   "lastOpenFiles": [
-    "KoldGoNote/lessons/S05/ICS.md",
-    "ics-6.md",
-    "DLCO-lab4-report(1).md",
-    "KoldGoNote/lessons/S05/FE 金融计量学.md",
-    "CS/CS-BAOYAN/njucs-baoyan/README.md",
-    "DLCO-lab4-report.md",
-    "KoldGoNote/lessons/S05/FBDP Home 金融大数据处理技术.md",
-    "KoldGoNote/lessons/S05/assignments/FBDP-7.md",
-    "CS/CS-BAOYAN/好题记录-HaoTi.md",
-    "CS/CS-BAOYAN/njucs-baoyan/21级经验/保研经验z.md",
-    "KoldGoNote/大创/CE 实验.md",
-    "公司金融学实训.md",
-    "KoldGoNote/Daily/2025-12-01_周一.md",
-    "FE - 研究pre.md",
-    "KoldGoNote/Daily/2025-11-29_周六.md",
-    "ICS-PA3 note.md",
-    "KoldGoNote/lessons/S05/PA dairy/ICS PA.md",
-    "KoldGoNote/lessons/S05/DLCO-0 数字逻辑与计算机组成.md",
-    "CE - 新的启发-1129.md",
-    "FBDP-lab3.md",
+    "KoldGoNote/lessons/S05/ICS/ICS - Section 5 程序的链接和加载执行.md",
+    "KoldGoNote/lessons/S05/ICS/ics - section 6 内存层次结构 memory hierarchy.md",
+    "KoldGoNote/lessons/S05/ICS/ICS - Section 2 ：数据的机器级表示与处理.md",
+    "KoldGoNote/lessons/S05/ics - section 8 异常处理控制流.md",
+    "KoldGoNote/lessons/S05/assignments/ics-pa3-note.md",
+    "KoldGoNote/lessons/S05/assignments/ICS-5.md",
+    "KoldGoNote/lessons/S05/assignments/ics-pa3-report.md",
+    "KoldGoNote/lessons/S05/ICS/ICS.md",
+    "KoldGoNote/lessons/S05/assignments/ics-6.md",
     "KoldGoNote/lessons/S05/PA dairy/ICS-PA2 note.md",
-    "ICS-PA3 note(1).md",
-    "KoldGoNote/Daily/2025-11-25_周二.md",
-    "APMCM.md",
-    "KoldGoNote/lessons/S05/assignments/FBDP-8.md",
-    "FBDP-8.md",
-    "CS/小卡片",
-    "CS/Bash",
-    "大创",
-    "CS/Unity",
-    "mine-combat",
-    "CS/Java",
-    "CS",
-    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/isla.jpeg",
-    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/image.png",
-    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets/image-1.png",
-    "CS/CS-BAOYAN/njucs-baoyan/21级经验/assets",
-    "CS/CS-BAOYAN/njucs-baoyan/test.txt",
-    "CS/CS-BAOYAN/njucs-baoyan/test.cpp",
-    "KoldGoNote/attachment/attachments/001F2DDF.png",
-    "KoldGoNote/attachment/attachments/wireshark-wnd-error.png",
-    "KoldGoNote/attachment/attachments/diff-ans.png",
-    "KoldGoNote/attachment/attachments/datagram-vs-virtual-circuit.png",
-    "KoldGoNote/attachment/attachments/broadcast storm.png",
-    "KoldGoNote/attachment/attachments/016A6B0D.png",
-    "KoldGoNote/attachment/attachments/7a80e3e32f44e2fb479818b6545b6df1.png"
+    "vault/redkoldnote/docs/本科课程/计算机网络/exps/exp3/README.md",
+    "KoldGoNote/lessons/S05/assignments/ICS-lab-cachesim.md",
+    "KoldGoNote/lessons/S05/assignments/DLCO-7(1).md",
+    "ics-8.md",
+    "KoldGoNote/lessons/S05/ICS/ICS - Section 4 程序的机器级表示.md",
+    "KoldGoNote/lessons/S05/assignments/DL-CO-4.md",
+    "KoldGoNote/lessons/S05/assignments/FBDP-lab4.md",
+    "KoldGoNote/lessons/S05/DLCO/DLCO-0 数字逻辑与计算机组成.md",
+    "KoldGoNote/lessons/S05/公司金融学 Company Finance.md",
+    "KoldGoNote/lessons/S05/assignments/DLCO-lab6-report.md",
+    "KoldGoNote/lessons/S05/DLCO/DLCO - Data in Computer.md",
+    "KoldGoNote/lessons/S05/DLCO/DLCO - FPGA 设计和硬件描述语言.md",
+    "KoldGoNote/lessons/S05/ICS/ics - section 7 虚拟存储器.md",
+    "CS/SQL/SQL base.md",
+    "KoldGoNote/lessons/S05/FBDP Home 金融大数据处理技术.md",
+    "DLCO-lab6-report.md",
+    "CS/SQL"
   ]
 }

@@ -8,7 +8,7 @@
   "outgoing-link": true,
   "tag-pane": true,
   "footnotes": false,
-  "properties": false,
+  "properties": true,
   "page-preview": true,
   "daily-notes": true,
   "templates": true,
@@ -22,12 +22,12 @@
   "random-note": false,
   "outline": true,
   "word-count": true,
-  "slides": true,
+  "slides": false,
   "audio-recorder": false,
   "workspaces": false,
   "file-recovery": true,
   "publish": false,
-  "sync": false,
+  "sync": true,
   "bases": true,
   "webviewer": false
 }

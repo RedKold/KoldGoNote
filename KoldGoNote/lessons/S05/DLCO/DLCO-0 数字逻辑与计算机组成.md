@@ -5,7 +5,7 @@
 - 数字逻辑和计算机组成
 - 考核
 	- 课后作业、问答：15%
-		- [click me check the 3 chapter assignment|400](https://kold.oss-cn-shanghai.aliyuncs.com/d18405c59099b86d65d4996969d22007.png)
+		- [click me check the 3 chapter assignment|600](https://kold.oss-cn-shanghai.aliyuncs.com/d18405c59099b86d65d4996969d22007.png)
 		- [[DL-CO-3]]
 		- [[DL-CO-4]] 
 		- [[DLCO-6]]
@@ -17,6 +17,9 @@
 		- [[DLCO-lab2-report]]
 		- [[DLCO-lab3-report]]
 		- [[DLCO-lab4-report]]
+		- [[DLCO-lab5-report]] 
+		- [[DLCO-lab6-report]]
+- 
 
 
 - 世界上第一台电子计算机 ABC（非通用）
@@ -34,9 +37,7 @@
 
 
 
-##  [[计算机如何工作]]
-
-## [[Data in Computer]]
+## [[DLCO - Data in Computer]]
 ## [[Logic Gate and CMOS]]
 ## [[DLCO-BooleanAlgebra]]
 ##  [[组合逻辑电路]]
@@ -44,51 +45,22 @@
 
 ## [[时序逻辑电路]]
 
-## FPGA 设计和硬件描述语言
+##  [[DLCO - FPGA 设计和硬件描述语言]]
 
-可编程逻辑器件（Programmable Logic Device, **PLD**）。
-- 介绍可编程逻辑元件
-- 介绍 FPGA 和其设计
-
-
-### 存储器阵列 ROM, RAM
-
-- `ROM`：(Read-only Memory, ROM) **只读存储器。**
-	- **非易失性**。
-	- 断电也不会消失。
-- `RAM`: （Random-access Memory, RAM）**随机存取存储器**
-	- **易失性存储器**
-	- 静态 RAM
-	- 动态 RAM
-
-#### ROM
-- **常见实现方式**
-	- ROM 存储阵列：MOS **晶体管的有无**来区分存储 `0` 和 `1`
-#### RAM
-- 静态 RAM (SRAM)
-- 动态 RAM (DRAM)
-
-#### 存储阵列表示
-`16*8位存储阵列`
-- 存储 `16` 个 `8bit` 机器数
-
-
-### FPGA 设计概述
-**FPGA**（Field Programmable Gate Array, FPGA）: **现场可编程门阵列**
 
 
 ## 运算方法和运算部件
 
 ### 加法器
 - 全加器和半加器
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015143857.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015143857.png)
 - **串行进位加法器**
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015144433.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015144433.png)
 - 并行进位加法器（CLA）
 	- Carry look ahead
 	- 通过逻辑方程代入，知道各进位之间无等待，可以相互独立并同时产生。
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015144600.png)
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015145152.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015144600.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015145152.png)
 - **还有一种折中的办法**
 	- 局部（单级）先行进位加法器。
 
@@ -109,11 +81,11 @@
 				- `Cin` 是输入的进位信号
 				- 如果 `Cout^Cin == 1`，说明中间进位发生了翻转，即产生了新的进位。
 	- 我们构造了**带标志加法器**
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151046.png)
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151059.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151046.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151059.png)
 
 - **** 算术逻辑部件（ALU）
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151413.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015151413.png)
 	- `ALUop` is actually a `S` in selector circuit. the function of various output is implemented by multi-selector.
 - ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251015152406.png)
 
@@ -149,7 +121,7 @@ $P_{i}=2^{-1}(Xy_{i}+P_{i-1})$
 	- 涉及到一些技术细节：
 		- 处理符号位
 		- 处理新的移位表达式
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251022140244.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251022140244.png)
 
 
 
@@ -325,12 +297,12 @@ add		x11,	x11,	x16		// R[x11]<-R[x11]+R[x16]	(compute carry bit)
 - 数据通路与时序控制
 - 计算机性能和 CPU 时间
 ### CPU 基本组成
-![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103116.png)
+![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103116.png)
 
 
 ### CPU 基本结构
 - 计算机的五大组成部分
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103435.png)
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103435.png)
 
 - Control Unit （控制器）
 	- 指令的控制部件
@@ -351,7 +323,7 @@ add		x11,	x11,	x16		// R[x11]<-R[x11]+R[x16]	(compute carry bit)
 - 数据通路的具体工作
 	- 进行数据存储、处理、传送
 
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103855.png)
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114103855.png)
 
 - **数据通路**是由 **操作元件** 和 **存储元件** 通过总线方式或分散方式连接而成的进行数据存储、处理、**传送的路径**。
 
@@ -371,7 +343,7 @@ add		x11,	x11,	x16		// R[x11]<-R[x11]+R[x16]	(compute carry bit)
 
 
 #### 时序控制
-![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112426.png)
+![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112426.png)
 - **锁存延迟**(Latch Prop, a.k.a Clk-to-Q)，即触发器的锁存延迟
 - **时钟偏移**(Clock Skew): 由于工艺、走线延迟等原因造成的时钟信号的偏差。
 - Longest Delay Path: **关键路径**。组合逻辑的最长路径。
@@ -391,15 +363,18 @@ add		x11,	x11,	x16		// R[x11]<-R[x11]+R[x16]	(compute carry bit)
 	- 吞吐率 (throughput)
 	- 带宽（bandwidth）
 
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112601.png)
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114112601.png)
 
 CPU 性能 (CPU performance): User CPU time
 系统性能 (System performance): 一般指没有其他负载时的响应时间
+
+
 $$
 吞吐率=单位时间内运行的作业(指令)数(有或无负载/干扰)
 $$
 
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251114115921.png)
+
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251114115921.png)
 
 
 **产品宣称指标**：Marketing Metrics
@@ -432,7 +407,7 @@ $$
 Fetch instruction: `Instruction <- M[PC]`
 - All instruction is same
 - When clock signal come, PC is updated to `s->dnpc` (dynamic next pc)
-![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251121114200.png)
+![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251121114200.png)
 - previous: 上一条指令遗留下的指令
 ![image.png|800](https://kold.oss-cn-shanghai.aliyuncs.com/20251121114600.png)
 
@@ -497,13 +472,13 @@ Fetch instruction: `Instruction <- M[PC]`
 
 #### 各类指令执行过程
 - 取指令并计算下一条指令地址：`IFetch`
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104812.png)
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104812.png)
 - 译码并取数（公共操作）记为 `Rfetch/ID`
 - **投机计算**：当前时钟结束，下个时钟来之前可以投机计算
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104914.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128104914.png)
 	- **所有控制信号不是同时生成的**。
 - R-型指令的执行。两个时钟周期：`RExec, RFinisih`
-	- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128105456.png)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128105456.png)
 
 - I-型指令的执行，需要两个时钟周期。`IExec, IFinish`
 - Load 指令：地址已经投机计算，还需两个时钟周期。`lwExec, lwFinish`
@@ -514,7 +489,7 @@ Fetch instruction: `Instruction <- M[PC]`
 
 
 - 状态转换图
-- ![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128112928.png)
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128112928.png)
 
 
 **多周期控制器的实现**
@@ -524,6 +499,82 @@ Fetch instruction: `Instruction <- M[PC]`
 - 每个指令周期不同
 - 控制信号取值不同
 前面我们已经讨论了指令执行的不同阶段，受此启发，**可以构造状态转移图**。
-![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114515.png)
-![image.png|400](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114530.png)
+![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114515.png)
+![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251128114530.png)
 - 和状态转移图完全对应。
+
+
+- 流水线数据通路
+
+
+### 流水线的三种冒险
+1. **数据冒险**：当指令在流水线中重叠执行时，后面的指令需要用到前面的指令的执行结果，而前面的指令尚未写回导致的冲突，称为数据冒险（也称为**数据相关性**）。
+2. **结构冒险**：当一条指令需要的硬件部件还在为之前的指令工作，而无法为这条指令提供服务，那就导致了结构冒险。（这里结构是指硬件当中的某个部件、也称为**资源冲突**）。
+3. **控制冒险**：如果现在想要执行哪条指令，是由之前指令的运行结果决定，而现在那条之前指令的结果还没产生，就导致了控制冒险（实际上就是 risc-v的跳转指令引起的，跳转指令要经过2个周期后才会出现**跳转结果**）
+具体的冒险可以看后面：[[#延迟]]
+
+
+
+### 流水线控制器
+**流水线控制器的实现**
+- ID 段生成所有控制信号，并随指令执行过程信息同步向后续阶段流
+- 与单周期处理器的控制器的实现方法一样，无需采用有限状态机
+- 
+
+
+我们有一些流水线段寄存器，比如 `IF/ID`, `ID/EX`, `M/WB`, 来存储周期执行过程中的一些信息
+
+- `M/WB`
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251219104114.png)
+	- 
+
+
+### 流水线各个阶段
+
+
+- **第八周期**
+	- 需要新的地址回送 PC，出现**反向数据流**
+
+
+#### 延迟
+- **数据冒险 (Data Hazard)**
+- 描述数据冒险，**一定要说清楚指令之间**
+- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251219111920.png)
+- 第一条 `load` 指令在第 5 周期才能完成 `Write`，但这涉及到数据冒险（Data Hazard）
+- `load` 的延迟效应。中间要延迟三个周期，才能在下一个 `R-type` 指令到来时，其取数取到正确的值
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251219112041.png)
+
+- **转移指令的延迟**
+- **控制冒险**(Control Hazard)
+	- ![image.png|600](https://kold.oss-cn-shanghai.aliyuncs.com/20251219112119.png)
+	- **取错了几个指令**！
+
+#### 数据冒险的解决
+
+- 硬件阻塞 (stall)
+- 软件插入 `NOP` 指令
+- 合理实现寄存器堆的读/写顺序 
+	- 同一周期内寄存器先写后读
+- **转发 (Forwarding** 或 **Bypassing 旁路)** 技术（不能解决所有的数据冒险）
+- 编译优化，调整指令顺序
+
+1. **硬件阻塞**：stall, 插入气泡
+	1. 比如：`add r1, r2, r3` -> `stall` -> `stall` -> `stall` -> `sub r4, r1, r3`
+
+
+2. 合理实现寄存器堆的读/写顺序 
+	1. 我们需要写口读口是独立的
+	2. 同一周期内寄存器先写后读。间隔两条以上的，可以避免冒险。
+3. 利用 DataPath 的中间数据：转发 (Forwarding)
+	1. 我们使用了原有数据通路额外的通路，将数据提前转发给需要的指令。
+	2. `EX/M` 寄存器记录了 `R-type` 指令的中间结果，可以开一个转发通路
+## test
+- 都是简答题
+- 电路和 CPU
+- **时序电路设计**
+	- 状态设计
+	- 卡诺图化简
+- **CPU**
+	- 不能单靠 CPU，相关联的几个题
+	- 后面这部分没有画图了
+	- 分析计算。

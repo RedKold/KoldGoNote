@@ -933,6 +933,29 @@ $$
 $$
 	- 系数满足非负性
 		- $\forall i=0,1,\dots,q,\alpha_{i}\geq {0}$
+- 描述里因变量 $y_{t}$ 的条件方差服从怎么样的动态过程。**方差方程**
 
 
+ **作回归**：
+$$
+ y_{t}=\mu_{t}+u_{t}
+$$
+获得 $\hat{u}_{t}$ 并 square
+
+
+
+### GARCH
+GARCH 模型发现 ARCH 模型的 $\sigma_{t-1}$ 包含之后的所有信息, 可以简化因子
+$$
+\sigma_{t}^{2} = \alpha_{0}+\alpha_{1}\mu_{t-1}^{2}+\beta \sigma_{t-1}^{2}
+$$
+记 $\varepsilon_{t}=u_{t}^{2}-\sigma_{t}^{2}$, 则 $\sigma^{2}_{t}=\mu_{t}^{2}-\varepsilon_{t}$
+$$
+u_{t}^{2}=\alpha_{0}+(\alpha_{1}+\beta)u_{t-1}^{2}-\beta\varepsilon_{t-1}+\varepsilon_{t}
+$$
+又因为
+$$
+var(u_{t}|\Omega_{t-1})=\mathrm{E}(u^{2}_{t}|\Omega_{t-1})=\sigma_{t}^{2}
+$$
+则 $\varepsilon$ 可以视作 MA (Moving Average)
 

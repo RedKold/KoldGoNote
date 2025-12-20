@@ -1,13 +1,11 @@
 {
+  "vimMode": true,
+  "alwaysUpdateLinks": true,
   "pdfExportSettings": {
-    "includeName": true,
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 90
+    "downscalePercent": 100
   },
-  "alwaysUpdateLinks": true,
-  "vimMode": true,
-  "attachmentFolderPath": "KoldGoNote/attachments",
-  "promptDelete": false
+  "useMarkdownLinks": false
 }
